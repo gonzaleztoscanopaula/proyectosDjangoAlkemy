@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Usuarios filtrados por edades</h1>
+    <ul>
+        {% for usuario in datosFiltrados %}
+        <li>{{ usuario.nombre }}, {{ usuario.apellido }}, {{ usuario.edad }}</li>
+        {% endfor %}    
+    </ul>
+
+</body>
+</html>
